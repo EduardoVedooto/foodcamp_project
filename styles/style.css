@@ -40,6 +40,7 @@ header div{
 
 main{
     padding: 19px 0 0 19px;
+    margin-bottom: 108px;
 }
 
 main h2{
@@ -54,10 +55,6 @@ ul{
     margin-top: 17px;
     overflow: scroll;
     margin-bottom: 27px;
-}
-
-ul:last-child{
-    margin-bottom: 16px;
 }
 
 li{
@@ -96,4 +93,31 @@ li .description{
     color: #A6A6A6;
     line-height: 17.58px;
     
+}
+
+footer {
+    width: 100%;
+    height: 92px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer button{
+    background-color: #CBCBCB;
+    border-radius: 50px;
+    border: none;
+    color: #FFF;
+    height: 61px;
+    width: 90%;
+    padding: 0 100px;
+
+}
+
+footer button:focus{
+    outline: none;
 }
