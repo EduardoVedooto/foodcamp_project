@@ -129,3 +129,95 @@ footer button{
 footer button:focus{
     outline: none;
 }
+
+.confirmation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255,255,255,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    display: none;
+}
+
+.confirmation .main_container{
+    background: #50D074;
+    width: 377px;
+    height: 353px;
+    border-radius: 9px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3px;
+}
+
+.confirmation .main_container h1{
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.confirmation .main_container ul{
+    flex-direction: column;
+    width: inherit;
+    margin: 0;
+    align-items: center;
+}
+
+.confirmation .main_container ul li{
+    background: none;
+    box-shadow: none;
+    flex-direction: row;
+    width: 90%;
+    height: auto;
+    margin: 10px 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+.confirmation .main_container ul li:last-child{
+    border-top: 1px solid rgba(255, 255, 255, 0.45);
+    font-weight: 700;
+    margin: 0;
+    padding: 10px 0;
+}
+
+
+
+.confirmation .main_container ul li p{
+    color: #FFF;
+    font-size: 22px;
+}
+
+.confirmation .main_container .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: inherit;
+}
+
+.confirmation .main_container .buttons button{
+    height: 52px;
+    width: 90%;
+    border-radius: 100px;
+    border: none;
+    font-size: 22px;
+    font-weight: 700;
+    color: #50D074;
+}
+
+.confirmation .main_container .buttons button:focus{
+    outline: none;
+}
+
+.confirmation .main_container .buttons button.cancel{
+    background-color: #50D074;
+    color: #FFF;
+}
