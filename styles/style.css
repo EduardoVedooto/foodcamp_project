@@ -39,7 +39,7 @@ header div{
 /* MAIN */
 
 main{
-    padding: 19px 0 0 19px;
+    padding-top: 19px;
     margin-bottom: 108px;
 }
 
@@ -47,6 +47,7 @@ main h2{
     font-size: 26px;
     color: #333;
     font-family: 'righteous';
+    margin-left: 19px;
 }
 
 ul{
@@ -55,6 +56,10 @@ ul{
     margin-top: 17px;
     overflow: scroll;
     margin-bottom: 27px;
+}
+
+ul::-webkit-scrollbar{
+    display: none;
 }
 
 li{
@@ -72,8 +77,9 @@ li{
 }
 
 ul li:first-child{
-    margin-left: 0;
+    margin-left: 19px;
 }
+
 
 li img{
     width: 100%;
