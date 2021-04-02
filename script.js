@@ -4,6 +4,7 @@ let drink = "";
 let drinkPrice = 0;
 let dessert = "";
 let dessertPrice = 0;
+let totalPrice;
 
 function selectedItem(itemPosition){
   
@@ -131,7 +132,7 @@ function finalizationButton(){
 function confirmationScreen(){
 
   let selectedItemInfo = null; // Essa variável será responsável por trazer as informações dos itens escolhidos para a tela de confirmação
-  let totalPrice = mainCoursePrice + drinkPrice + dessertPrice;
+  totalPrice = mainCoursePrice + drinkPrice + dessertPrice;
 
   selectedItemInfo = document.querySelector(".confirmation li.mainCourse .name"); // pegamos a tag do nome do prato escolhido
   selectedItemInfo.innerHTML = mainCourse;
@@ -174,8 +175,10 @@ function sendToWhatsapp(){
   if(name === "" || address === ""){
     alert("Por favor, preencha todos os campos obrigatórios");
   } else {
-    const link = document.querySelector(".confirmation buttons a");
-    link.setAttribute("href", "")
+    let message = "Olá, gostaria de fazer o pedido: \n - Prato: " + mainCourse + "\n - Bebida: " + drink + "\n - Sobremesa: " + dessert + "\n Total: R$ " + totalPrice.toFixed(2);
+    message = message + "\n\nNome: " + name + "\nEndereço: " + address;
+    message = encodeURIComponent(message);
+    window.open("https://wa.me/5555984193093?text="+message);
   }
   
 }
