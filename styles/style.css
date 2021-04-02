@@ -172,7 +172,7 @@ footer button:focus{
 .confirmation .main_container{
     background: #50D074;
     width: 377px;
-    height: 353px;
+    height: auto;
     border-radius: 9px;
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
     display: flex;
@@ -205,6 +205,8 @@ footer button:focus{
     margin: 10px 0;
     padding: 0;
     border-radius: 0;
+    border: none;
+    justify-content: space-between;
 }
 
 .confirmation .main_container ul li:last-child{
@@ -219,6 +221,31 @@ footer button:focus{
 .confirmation .main_container ul li p{
     color: #FFF;
     font-size: 22px;
+    padding-right: 0;
+    margin: 0;
+}
+
+.confirmation .main_container .inputs{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.confirmation .main_container .inputs input{
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    padding-left: 10px;
+    color: #32B72F;
+}
+
+.confirmation .main_container .inputs input:focus{
+    outline: none;
+}
+
+.confirmation .main_container .inputs input:first-child{
+    margin-bottom: 5px;
 }
 
 .confirmation .main_container .buttons{
@@ -268,4 +295,8 @@ footer button:focus{
 .activated{
     background-color: #32B72F;
     font-weight: 700;
+}
+
+.displayConfirmation{
+    display: flex;
 }
