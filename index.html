@@ -22,157 +22,171 @@
     <main>
             
         <h2>Primeiro seu prato</h2>
-        <ul>
+        <ul class="mainCourse">
             
-            <li>
+            <li class="item1" onclick="selectedItem('.item1')">
                 <img src="assets/images/Pizza.jpg" alt="Visualização do prato">
                 <h3>Pizza</h3>
                 <p class="description">
                     Pizza portuguesa
                 </p>
-                <p class="valor">
+                <p class="cost">
                     R$ 39,90
                 </p>
+                <ion-icon name="checkmark-circle"></ion-icon>
             </li>
 
-            <li>
+            <li class="item2" onclick="selectedItem('.item2')">
                 <img src="assets/images/lasanha.jpg" alt="Visualização do prato">
                 <h3>Lasanha</h3>
                 <p class="description">
                     Lasanha bolonhesa
                 </p>
-                <p class="valor">
+                <p class="cost">
                     R$ 23,45
                 </p>
+                <ion-icon name="checkmark-circle"></ion-icon>
             </li>
 
-            <li>
+            <li class="item3" onclick="selectedItem('.item3')">
                 <img src="assets/images/hamburguer.jpg" alt="Visualização do prato">
                 <h3>Hamburguer</h3>
                 <p class="description">
                     Hamburguer tradicional com porção de fritas
                 </p>
-                <p class="valor">
+                <p class="cost">
                     R$ 28,90
                 </p>
+                <ion-icon name="checkmark-circle"></ion-icon>
             </li>
 
-            <li>
+            <li class="item4" onclick="selectedItem('.item4')">
                 <img src="assets/images/alaminuta.jpg" alt="Visualização do prato">
                 <h3>À la minuta</h3>
                 <p class="description">
                     À la minuta tradicional (opção: bife de frango)
                 </p>
-                <p class="valor">
+                <p class="cost">
                     R$ 20,90
                 </p>
+                <ion-icon name="checkmark-circle"></ion-icon>
             </li>
 
-            <li>
+            <li class="item5" onclick="selectedItem('.item5')">
                 <img src="assets/images/frango_yin_yang 2.png" alt="Visualização do prato">
                 <h3>Frango Yin Yang</h3>
                 <p class="description">
                     Um pouco de batata, um pouco de salada
                 </p>
-                <p class="valor">
+                <p class="cost">
                     R$ 14,90
                 </p>
+                <ion-icon name="checkmark-circle"></ion-icon>
             </li>
             
+
         </ul>
 
         <h2>Agora, sua bebida</h2>
-        <ul>
-            <li>
+        <ul class="drink">
+            <li class="drink1" onclick="selectedDrink('.drink1')">
                 <img src="assets/images/latas.jpg" alt="Visualização da bebida">
                 <h3>Refrigerante lata</h3>
                 <p class="description">
                     Lata 350ml
                 </p>
-                <p class="valor">
+                <p class="cost">
                     R$ 4,90
                 </p>
+                <ion-icon name="checkmark-circle"></ion-icon>
             </li>
             
-            <li>
+            <li class="drink2" onclick="selectedDrink('.drink2')">
                 <img src="assets/images/sucos.jpg" alt="Visualização da bebida">
                 <h3>Suco Natural</h3>
                 <p class="description">
                     Suco natural de vários sabores
                 </p>
-                <p class="valor">
+                <p class="cost">
                     R$ 6,50
                 </p>
+                <ion-icon name="checkmark-circle"></ion-icon>
             </li>
 
-            <li>
+            <li class="drink3" onclick="selectedDrink('.drink3')">
                 <img src="assets/images/agua.jpg" alt="Visualização da bebida">
                 <h3>Água</h3>
                 <p class="description">
                     Água mineral (com e sem gás)
                 </p>
-                <p class="valor">
+                <p class="cost">
                     R$ 3,70
                 </p>
+                <ion-icon name="checkmark-circle"></ion-icon>
             </li>
 
         </ul>
 
         <h2>Por fim, sua sobremesa</h2>
-        <ul>
-            <li>
+        <ul class="dessert">
+            <li class="dessert1" onclick="selectedDessert('.dessert1')">
                 <img src="assets/images/sorvete.jpg" alt="Visualização da sobremesa">
                 <h3>Sorvete</h3>
                 <p class="description">
                     Sorvete de vários sabores
                 </p>
-                <p class="valor">
+                <p class="cost">
                     R$ 8,30
                 </p>
+                <ion-icon name="checkmark-circle"></ion-icon>
             </li>
             
-            <li>
+            <li class="dessert2" onclick="selectedDessert('.dessert2')">
                 <img src="assets/images/tortalimao.jpg" alt="Visualização da sobremesa">
                 <h3>Torta de limão</h3>
                 <p class="description">
                     Fatia de 300g de torta de limão
                 </p>
-                <p class="valor">
+                <p class="cost">
                     R$ 10,90
                 </p>
+                <ion-icon name="checkmark-circle"></ion-icon>
             </li>
 
-            <li>
+            <li class="dessert3" onclick="selectedDessert('.dessert3')">
                 <img src="assets/images/donuts.jpg" alt="Visualização da sobremesa">
                 <h3>Donuts</h3>
                 <p class="description">
                     Donuts com coberturas diversas
                 </p>
-                <p class="valor">
+                <p class="cost">
                     R$ 7,90
                 </p>
+                <ion-icon name="checkmark-circle"></ion-icon>
             </li>
 
-            <li>
+            <li class="dessert4" onclick="selectedDessert('.dessert4')">
                 <img src="assets/images/macaron.jpg" alt="Visualização da sobremesa">
                 <h3>Macaron</h3>
                 <p class="description">
                     Macarons diversos
                 </p>
-                <p class="valor">
+                <p class="cost">
                     R$ 5,90
                 </p>
+                <ion-icon name="checkmark-circle"></ion-icon>
             </li>
 
-            <li>
+            <li class="dessert5" onclick="selectedDessert('.dessert5')">
                 <img src="assets/images/milkshake.jpg" alt="Visualização da sobremesa">
                 <h3>Milkshake</h3>
                 <p class="description">
                     Milkshakes variados
                 </p>
-                <p class="valor">
+                <p class="cost">
                     R$ 9,90
                 </p>
+                <ion-icon name="checkmark-circle"></ion-icon>
             </li>
 
         </ul>
@@ -218,5 +232,8 @@
             para fechar o pedido
         </button>
     </footer>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
