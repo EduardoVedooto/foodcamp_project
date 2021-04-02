@@ -178,7 +178,7 @@ function sendToWhatsapp(){
     let message = "Olá, gostaria de fazer o pedido: \n - Prato: " + mainCourse + "\n - Bebida: " + drink + "\n - Sobremesa: " + dessert + "\n Total: R$ " + totalPrice.toFixed(2);
     message = message + "\n\nNome: " + name + "\nEndereço: " + address;
     message = encodeURIComponent(message);
-    window.open("https://wa.me/5555984193093?text="+message);
+    window.open("https://wa.me/5555981088323?text="+message);
   }
   
 }
